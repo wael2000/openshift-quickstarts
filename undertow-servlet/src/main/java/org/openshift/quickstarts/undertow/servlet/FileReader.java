@@ -39,7 +39,7 @@ public class FileReader {
         catch (IOException e)
         {
             e.printStackTrace();
-            contentBuilder.append("/data/message File Not Found");
+            contentBuilder.append("/rtf-data/message File Not Found");
         }
         return contentBuilder.toString();
     }
