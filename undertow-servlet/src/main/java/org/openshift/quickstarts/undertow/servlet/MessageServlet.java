@@ -46,6 +46,8 @@ public class MessageServlet extends HttpServlet {
     protected void doGet(final HttpServletRequest req, final HttpServletResponse resp) throws ServletException, IOException {
         PrintWriter writer = resp.getWriter();
         writer.write(message);
+        writer.write("\n");
+        writer.write(FileReader.readMessage());
         writer.close();
     }
 
