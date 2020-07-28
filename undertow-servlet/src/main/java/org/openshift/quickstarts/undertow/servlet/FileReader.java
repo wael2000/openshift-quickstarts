@@ -30,7 +30,7 @@ import java.util.stream.Stream;
 public class FileReader {
   public static String readMessage()
     {
-        String filePath = "/data/message";
+        String filePath = "/rtf-data/message";
         StringBuilder contentBuilder = new StringBuilder();
         try (Stream<String> stream = Files.lines( Paths.get(filePath), StandardCharsets.UTF_8))
         {
